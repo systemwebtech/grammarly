@@ -107,10 +107,11 @@ button:hover {
   }
 
   h2 {
+    margin:0;
     font-size: 28px;
   }
 
-  p {
+  p {margin:0;
     font-size: 16px;
     word-spacing: normal;
     margin-bottom: 40px;
@@ -139,7 +140,7 @@ button:hover {
   </head>
   <body>
     <div class="container">
-      <h2>Real Time character Counter</h2>
+      <h2>Meta Tag Character Counter</h2>
       <p>
         Check your English text for grammar, spelling, and punctuation errors
         with SystemWebTech real time char counter.
@@ -148,7 +149,7 @@ button:hover {
       <textarea
         id="textarea"
         class="textarea"
-        placeholder="please Subscribe SystemWebTech"
+        placeholder="Please Subscribe SystemWebTech"
         maxlength="150"
       ></textarea>
 
@@ -157,9 +158,9 @@ button:hover {
       <div class="counter-container">
         <p>Total character: <span id="total-conter"> 0</span></p>
         <p>
-       <!----   Remaining:
-          <span class="remaining-counter" id="remaining-counter">150</span>
-        </p> ---->
+        Remaining:
+          <span class="remaining-counter" id="remaining-counter">160</span>
+        </p> 
       </div>
     </div>
 
@@ -170,13 +171,13 @@ let remainingCoutn = document.getElementById("remaining-counter");
 
 let userChar = 0;
 
-// to update the character on screen
+ to update the character on screen
 const updateCounter = () => {
   userChar = charval.value.length;
 
   totalCount.innerText = userChar;
 
- // remainingCoutn.innerText = 150 - userChar;
+ // remainingCoutn.innerText = 160 - userChar;
 };
 
 charval.addEventListener("keyup", () => updateCounter());
