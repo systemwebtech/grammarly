@@ -144,16 +144,11 @@ button:hover {
   <body>
     <div class="container">
       <h2>Meta Tag Character Counter</h2>
-      <p>
-        Check your English text for grammar, spelling, and punctuation errors
-        with SystemWebTech real time char counter.
-      </p>
-
-      <textarea
+ <textarea
         id="textarea"
         class="textarea"
         placeholder="Please Subscribe SystemWebTech"
-        maxlength="150"
+        maxlength="160"
       ></textarea>
 
       <button onclick="copyText()">Copy Text</button>
@@ -180,7 +175,7 @@ const updateCounter = () => {
 
   totalCount.innerText = userChar;
 
- // remainingCoutn.innerText = 160 - userChar;
+remainingCoutn.innerText = 160 - userChar;
 };
 
 charval.addEventListener("keyup", () => updateCounter());
