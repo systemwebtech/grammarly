@@ -156,10 +156,10 @@ button:hover {
 
       <div class="counter-container">
         <p>Total character: <span id="total-conter"> 0</span></p>
-        <!---<p>
-          Remaining:
+        <p>
+       <!----   Remaining:
           <span class="remaining-counter" id="remaining-counter">150</span>
-        </p> --->
+        </p> ---->
       </div>
     </div>
 
@@ -176,7 +176,7 @@ const updateCounter = () => {
 
   totalCount.innerText = userChar;
 
-  remainingCoutn.innerText = 150 - userChar;
+ // remainingCoutn.innerText = 150 - userChar;
 };
 
 charval.addEventListener("keyup", () => updateCounter());
